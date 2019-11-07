@@ -1,6 +1,10 @@
+language: generic
+env:
+  global:
+    - msg='hello world!'
 deploy:
   provider: script
-  script: echo 'hello world!'
+  script: echo ${msg}
   on:
     tags: true
     all_branches: true
