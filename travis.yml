@@ -1,2 +1,6 @@
-script:
-  - echo Hello world!
+deploy:
+  provider: script
+  script: echo 'hello world!'
+  on:
+    tags: true
+    all_branches: true
