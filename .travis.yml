@@ -4,7 +4,9 @@ env:
     - msg='hello world!'
 deploy:
   provider: script
-  script: echo ${msg}
+  script: 
+    - echo ${msg}
+    - echo "oi"
   on:
     tags: true
     all_branches: true
